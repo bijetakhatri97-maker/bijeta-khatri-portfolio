@@ -1,226 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Bijeta Khatri provides premium finance consulting, accounting support, bookkeeping, business advisory, financial systems setup, budgeting, cash flow management, Excel dashboards, and remote business consulting services in Nepal and internationally." />
+<meta name="keywords" content="Finance Consultant Nepal, Business Consultant Kathmandu, Accounting Services, Bookkeeping, Financial Advisor, Excel Dashboard Expert, QuickBooks Support, Xero Accounting, Cash Flow Consulting, Business Advisory" />
+<meta name="author" content="Bijeta Khatri" />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Bijeta Khatri | Finance & Business Consulting" />
+<meta property="og:description" content="Premium finance consulting, bookkeeping, accounting support, budgeting, cash flow management, and business advisory services." />
+<meta property="og:type" content="website" />
 
-<title>Bijeta Khatri | Remote Finance & Accounting Support</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Bijeta Khatri Finance & Business Consulting",
+  "description": "Finance consulting, bookkeeping, accounting support, business advisory, reporting, and financial systems support.",
+  "areaServed": "Worldwide",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kathmandu",
+    "addressCountry": "Nepal"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/bijeta-khatri97/"
+  ],
+  "telephone": "+9779847371085",
+  "email": "bijetakhatriofficial@gmail.com"
+}
+</script>
 
-<meta name="description" content="Remote accounting, bookkeeping, financial reporting, and business consulting services for startups and businesses worldwide.">
+<title>Bijeta Khatri | Finance & Business Consulting</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Inter', sans-serif;
-    background: #ffffff;
-    color: #111;
+    background: #0B1C2C;
+    color: white;
+    line-height: 1.7;
 }
 
-.container {
-    max-width: 1300px;
-    margin: auto;
-    padding: 40px 20px;
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 70px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(11, 28, 44, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-h1 {
-    font-size: 3rem;
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
+nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
 }
 
-p {
-    color: #555;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #5da9ff;
 }
 
 /* HERO */
 .hero {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at top right, rgba(93,169,255,0.18), transparent 25%),
+        radial-gradient(circle at bottom left, rgba(37,211,102,0.08), transparent 20%);
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    padding: 80px 0;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 70px;
+    min-height: 90vh;
 }
 
 .hero-text {
-    max-width: 600px;
+    max-width: 650px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(93, 169, 255, 0.12);
+    color: #8bc0ff;
+    border: 1px solid rgba(93, 169, 255, 0.3);
+    border-radius: 100px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.05;
+    margin-bottom: 10px;
+}
+
+.hero span {
+    color: #5da9ff;
+}
+
+.hero h3 {
+    color: #d0d9e3;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.hero p {
+    color: #c4ced9;
+    font-size: 1.05rem;
+    margin-bottom: 24px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .btn {
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 14px 26px;
+    border-radius: 12px;
     text-decoration: none;
-    margin-right: 10px;
-    display: inline-block;
-    margin-top: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .primary {
-    background: #0B1C2C;
-    color: white;
-}
-
-.secondary {
-    border: 1px solid #0B1C2C;
+    background: white;
     color: #0B1C2C;
 }
 
+.primary:hover {
+    transform: translateY(-2px);
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
 .linkedin {
-    background: #0077b5;
-    color: orange;
+    background: #0077B5;
+    color: white;
 }
 
-.hero img {
+.hero-image img {
     width: 380px;
-    border-radius: 16px;
+    border-radius: 24px;
+    border: 3px solid rgba(255,255,255,0.08);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
 }
 
-/* CARDS */
+/* SECTION */
+.section {
+    padding: 100px 70px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #b8c3cf;
+    max-width: 760px;
+    margin: auto;
+}
+
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
 }
 
 .card {
-    padding: 25px;
-    border-radius: 12px;
-    background: #f9f9f9;
-    transition: 0.3s;
+    background: linear-gradient(180deg, #163552 0%, #11283f 100%);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, rgba(93,169,255,0.18), transparent 70%);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(37,211,102,0.10), transparent 70%);
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border-color: rgba(93,169,255,0.4);
+}
+
+.card h3 {
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.card p {
+    color: #c3ccd6;
+    font-size: 0.97rem;
+}
+
+/* ABOUT */
+.about-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: #c6d1dc;
+    font-size: 1.05rem;
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.stat {
+    text-align: center;
+    background: #132c45;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    color: #5da9ff;
 }
 
 /* CONTACT */
 .contact-box {
+    max-width: 800px;
+    margin: auto;
     text-align: center;
 }
 
-footer {
-    background: #0B1C2C;
-    color: white;
+.contact-box p {
+    margin-bottom: 16px;
+    color: #d1dae3;
+}
+
+.contact-box a {
+    color: #8fc4ff;
+    text-decoration: none;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #132c45 0%, #183b5e 100%);
+    padding: 70px;
+    border-radius: 24px;
     text-align: center;
-    padding: 20px;
+}
+
+.cta h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #ccd6df;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #081420;
+    color: #9fb0c0;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 /* RESPONSIVE */
-@media(max-width:900px){
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+@media(max-width: 980px) {
 
-    .hero img {
-        width: 250px;
-    }
+nav {
+    padding: 20px 25px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 25px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 340px;
+}
+
+.button-group {
+    justify-content: center;
+}
+
+.section {
+    padding: 80px 25px;
+}
+
+.cta {
+    padding: 40px 25px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<!-- Premium Finance & Business Consulting Website -->
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">Bijeta Khatri</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
 <!-- HERO -->
-<div class="container hero">
+<section class="hero">
+
     <div class="hero-text">
-        <h1>Remote Finance, Accounting & Business Consulting</h1>
+
+        <div class="badge">
+            Trusted Outsourcing Partner for Startups, SMEs, and Growing Businesses
+        </div>
+
+        <h1>
+            Helping Global Businesses Build <span>Financial Clarity</span> & Smarter Systems
+        </h1>
+
+        <h3>
+            Remote Finance Consulting and Business Advisory Services
+        </h3>
+
         <p>
-        I help businesses organize financial systems, improve decision-making, 
-        and build structured accounting workflows — delivered remotely from Nepal.
+            Strong businesses are built on clarity, structure, and smart financial decisions.
+            I help businesses organize their financial systems, streamline operations, 
+            and build sustainable growth with reliable finance and consulting support.
         </p>
 
-        <a href="#contact" class="btn primary">Schedule Consultation</a>
-        <a href="#services" class="btn secondary">View Services</a>
-        <a href="https://www.linkedin.com/in/bijeta-khatri97/" target="_blank" class="btn linkedin">Connect on LinkedIn</a>
+        
+
+        <div class="button-group">
+
+            <a href="https://wa.me/9779847371085" target="_blank" rel="noopener noreferrer" class="btn whatsapp">
+                Book Appointment on WhatsApp
+            </a>
+
+            <a href="https://www.linkedin.com/in/bijeta-khatri97/" target="_blank" rel="noopener noreferrer" class="btn linkedin">
+                Visit LinkedIn Profile
+            </a>
+
+        </div>
+
     </div>
 
-    <img src="website-photo.jpg" alt="Bijeta Khatri">
-</div>
+    <div class="hero-image">
+        <img src="website-photo1.png" alt="Bijeta Khatri - Finance and Business Consultant" loading="lazy">
+    </div>
+
+</section>
 
 <!-- ABOUT -->
-<div class="container">
-    <h2>About</h2>
-    <p style="max-width:800px;margin:auto;text-align:center;">
-        I work with startups, small businesses, and growing teams to organize financial operations,
-        improve reporting clarity, and support business decisions through structured finance systems.
-        Alongside accounting support, I provide business consulting to help companies operate more efficiently
-        and make better financial decisions.
-    </p>
-</div>
+<section id="about" class="section">
+
+    <div class="section-title">
+        <h2>Strategic Financial Support For Modern Businesses</h2>
+
+        <p>
+            Organized systems. Better reporting. Smarter business decisions.
+        </p>
+    </div>
+
+    <div class="about-box">
+
+        <p>
+            My work focuses on helping businesses improve financial clarity,
+            streamline operations, and build organized financial systems that
+            support long term growth. Based in Nepal, I provide remote finance,
+            accounting, and business consulting services to clients worldwide,
+            including startups, entrepreneurs, and companies across 
+            the USA, UK, Canada, Australia, and international markets.
+        </p>
+
+        <br>
+
+        <p>
+            Whether you need remote accounting assistance, consulting support,
+            financial organization, or strategic reporting systems,
+            I help businesses operate with greater clarity and confidence.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>Remote</h3>
+                <p>Worldwide Support</p>
+            </div>
+
+            <div class="stat">
+                <h3>Business</h3>
+                <p>Consulting & Advisory</p>
+            </div>
+
+            <div class="stat">
+                <h3>Finance</h3>
+                <p>Systems & Reporting</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- SERVICES -->
-<div id="services" class="container">
-    <h2>Services</h2>
+<section id="services" class="section">
+
+    <div class="section-title">
+        <h2>Professional Services</h2>
+
+        <p>
+            Finance, accounting, and business support solutions tailored for growing businesses.
+        </p>
+    </div>
+
     <div class="grid">
 
         <div class="card">
-            <h3>Bookkeeping Support</h3>
-            <p>Transaction recording, reconciliation, and structured financial records.</p>
+            <h3>Bookkeeping Services and Accounting Support</h3>
+            <p>
+                Organized bookkeeping, transaction management,
+                reconciliation, and financial record maintenance.
+            </p>
         </div>
 
         <div class="card">
             <h3>Financial Reporting</h3>
-            <p>Clear reports, summaries, and insights for decision-making.</p>
+            <p>
+                Clear financial reports that help businesses track performance
+                and make informed decisions.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Excel Systems</h3>
-            <p>Custom dashboards, tracking systems, and financial models.</p>
-        </div>
-
-        <div class="card">
-            <h3>Finance Operations</h3>
-            <p>Remote finance workflow support and coordination.</p>
+            <h3>Cash Flow Management</h3>
+            <p>
+                Monitoring inflow, outflow, forecasting,
+                and improving financial planning systems.
+            </p>
         </div>
 
         <div class="card">
             <h3>Business Consulting</h3>
-            <p>Helping businesses improve operations, structure decisions, and optimize processes.</p>
+            <p>
+                Strategic support for business operations,
+                process improvement, and organizational systems.
+            </p>
         </div>
 
         <div class="card">
-            <h3>Startup Support</h3>
-            <p>Flexible finance and consulting support for growing businesses.</p>
+            <h3>Excel Dashboards and Financial Support</h3>
+            <p>
+                Professional Excel systems, dashboards,
+                automation, and financial tracking tools.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>QuickBooks & Xero Support</h3>
+            <p>
+                Accounting software setup, support,
+                organization, and workflow management.
+            </p>
         </div>
 
     </div>
-</div>
 
-<!-- PROCESS -->
-<div class="container">
-    <h2>Workflow</h2>
-    <div class="grid">
-        <div class="card">Understand Business Needs</div>
-        <div class="card">Organize Financial Data</div>
-        <div class="card">Build Systems</div>
-        <div class="card">Reporting & Advice</div>
+</section>
+
+<!-- CATALOGUE -->
+<section id="catalogue" class="section">
+
+    <div class="section-title">
+        <h2>Service Catalogue & Pricing</h2>
+
+        <p>
+            Specialized solutions for entrepreneurs, startups, SMEs, and growing businesses.
+        </p>
     </div>
-</div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Startup Financial Setup</h3>
+            <p>
+                Financial structure creation, budgeting systems,
+                reporting setup, and operational organization.
+            </p>
+            <br>
+            <strong style="color:#25D366;">Package: $199 </strong>
+        </div>
+
+        <div class="card">
+            <h3>Remote Accounting Assistance</h3>
+            <p>
+                Ongoing remote support for bookkeeping,
+                reporting, reconciliation, and organization.
+            </p>
+            <br>
+            <strong style="color:#25D366;">Starting From: $99/month</strong>
+        </div>
+
+        <div class="card">
+            <h3>Management Reporting</h3>
+            <p>
+                Monthly reporting dashboards and structured financial summaries.
+            </p>
+             <br>
+            <strong style="color:#25D366;">Starting From: NPR $66/month</strong>
+        </div>
+
+        <div class="card">
+            <h3>Financial Cleanup</h3>
+            <p>
+                Organizing records, fixing inconsistencies,
+                and creating cleaner accounting workflows.
+            </p> 
+            <br>
+            <strong style="color:#25D366;">Starting From: $199</strong>
+        </div>
+
+        <div class="card">
+            <h3>Expense Tracking Systems</h3>
+            <p>
+                Customized systems for monitoring business expenses and profitability.
+            </p>
+             <br>
+            <strong style="color:#25D366;">Set Up Fee: $88 </strong>
+        </div>
+
+        <div class="card">
+            <h3>Business Advisory Support</h3>
+            <p>
+                Guidance on operational improvements,
+                finance management, and business efficiency.
+            </p>
+            <br>
+            <strong style="color:#25D366;">Starting From: $149</strong>
+        </div>
+
+        <div class="card">
+            <h3>Monthly Finance Support</h3>
+            <p>
+                Ongoing support for reporting, bookkeeping,
+                tracking, and business finance management.
+            </p>
+            <br>
+            <strong style="color:#25D366;">Starting From: NPR $249/month</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+
+    <div class="section-title">
+        <h2>Core Skills & Tools</h2>
+
+        <p>
+            Modern finance tools and consulting systems designed for efficient business operations.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">Financial Reporting</div>
+        <div class="card">Bookkeeping</div>
+        <div class="card">Excel Dashboards</div>
+        <div class="card">Google Sheets</div>
+        <div class="card">QuickBooks and Xero</div>
+        <div class="card">Business Consulting</div>
+        <div class="card">Budget Planning</div>
+        <div class="card">Cash Flow Monitoring</div>
+        <div class="card">Financial Analysis</div>
+        <div class="card">Process Optimization</div>
+        <div class="card">Remote Business Support</div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+
+    <div class="section-title">
+        <h2>Selected Work</h2>
+
+        <p>
+            Examples of systems and finance solutions developed for businesses.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Expense Tracking System</h3>
+            <p>
+                Built a structured Excel dashboard for monitoring expenses,
+                categorization, and financial reporting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cash Flow Monitoring System</h3>
+            <p>
+                Developed a tracking system for inflow, outflow,
+                and financial forecasting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Business Budget Planner</h3>
+            <p>
+                Created customized financial planning spreadsheets
+                for operational and strategic budgeting.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="section">
+
+    <div class="cta" style="position:relative;overflow:hidden;border:1px solid rgba(255,255,255,0.08);box-shadow:0 25px 60px rgba(0,0,0,0.25);">
+
+        <div style="position:absolute;top:-60px;right:-60px;width:180px;height:180px;background:radial-gradient(circle, rgba(93,169,255,0.22), transparent 70%);"></div>
+
+        <div style="position:absolute;bottom:-60px;left:-60px;width:180px;height:180px;background:radial-gradient(circle, rgba(37,211,102,0.12), transparent 70%);"></div>
+
+        <h2>
+            Financial Systems Built Around Clarity, Growth & Trust
+        </h2>
+
+        <p>
+            Whether you need bookkeeping, reporting, business consulting,
+            financial organization, or operational support,
+            let's discuss how I can help your business grow more efficiently.
+        </p>
+
+        <div class="button-group" style="justify-content:center;">
+
+            <a href="https://wa.me/9779847371085" target="_blank" rel="noopener noreferrer" class="btn whatsapp">
+                Chat on WhatsApp
+            </a>
+
+            <a href="https://www.linkedin.com/in/bijeta-khatri97/" target="_blank" rel="noopener noreferrer" class="btn linkedin">
+                Connect on LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- CONTACT -->
-<div id="contact" class="container contact-box">
-    <h2>Contact</h2>
+<section id="contact" class="section">
 
-    <p>Email: bijetakhatriofficial@gmail.com</p>
+    <div class="section-title">
+        <h2>Contact</h2>
 
-    <p>
-        Phone: 
-        <a href="tel:+9779847371085">+977-9847371085</a>
-    </p>
+        <p>
+            Available for remote consulting, accounting support, and business advisory.
+        </p>
+    </div>
 
-    <a href="https://www.linkedin.com/in/bijeta-khatri97/" target="_blank" class="btn linkedin">
-        Connect on LinkedIn
-    </a>
-</div>
+    <div class="contact-box">
 
+        <div style="margin-bottom:30px;padding:20px;background:linear-gradient(135deg, rgba(93,169,255,0.12), rgba(37,211,102,0.08));border-radius:18px;border:1px solid rgba(255,255,255,0.08);">
+            <h3 style="margin-bottom:10px;">Book Your Consultation</h3>
+            <p style="margin-bottom:15px;">Quick WhatsApp booking available for all consulting and financial support services.</p>
+
+            <a href="https://wa.me/9779847371085" target="_blank" rel="noopener noreferrer" class="btn whatsapp">
+                Book via WhatsApp
+            </a>
+        </div>
+
+        <p>
+            Kathmandu, Nepal
+        </p>
+
+        <p>
+            WhatsApp / Phone:
+            <a href="https://wa.me/9779847371085" target="_blank">
+                +977-9847371085
+            </a>
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:bijetakhatriofficial@gmail.com">
+                bijetakhatriofficial@gmail.com
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/bijeta-khatri97/" target="_blank">
+                linkedin.com/in/bijeta-khatri97
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
 <footer>
-    Remote Accounting | Bookkeeping | Financial Systems | Business Consulting | Nepal
+
+    <div style="margin-bottom:12px;font-size:1.05rem;font-weight:600;color:white;">
+        Bijeta Khatri
+    </div>
+
+    Finance Consulting • Accounting Support • Business Advisory • Remote Financial Services • Kathmandu, Nepal
+
+    <div style="margin-top:12px;color:#7f95ab;font-size:0.92rem;">
+        Helping businesses build smarter financial systems and stronger operational clarity.
+    </div>
+
 </footer>
 
 </body>
 </html>
+```
+
+
+
